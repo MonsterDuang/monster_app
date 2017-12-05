@@ -1,0 +1,12 @@
+{
+  "index.html": {
+    "resources": [
+      "static/js/vendor.d72a7e88be6bb49306af.js",
+      "static/js/mui.min.js",
+      "static/iconfont.css",
+      "static/reset.js",
+      "static/animate.css",
+      "static/myQuery.js"
+    ]
+  }
+}
