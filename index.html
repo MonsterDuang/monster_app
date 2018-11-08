@@ -10,8 +10,50 @@
       }
       ul, ol, li {
         list-style: none
-      }</style><link href=./static/css/app.028730aafc54a3b1fc241870e0aaf9e4.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.3ad1d5771e9b13dbdad2.js></script><script type=text/javascript src=./static/js/vendor.f8f793d140f2941c4cb2.js></script><script type=text/javascript src=./static/js/app.81cf11e0e58eed44bc8f.js></script></body><script>mui.init({
+      }</style><link href=./static/css/app.530ba636223e4cf09409fa6614e9cd7e.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.3ad1d5771e9b13dbdad2.js></script><script type=text/javascript src=./static/js/vendor.d2cd878d3808e73f8ce2.js></script><script type=text/javascript src=./static/js/app.eeb7b03898ae82366fe1.js></script></body><script>mui.init({
     keyEventBind: {
       backbutton: true // 打开back按键监听
     }
-  })</script></html>
+  })
+  /**
+   * 长按事件
+   * 首页长按 底部出现切换背景的tab
+   * */
+  $('#app').longTag(showBgList)
+  // show tab
+  function showBgList() {
+    let masked = document.querySelector('.masked')
+    let bgList = document.querySelector('.bgList')
+    // 获取 bgList 的样式表
+    let bgSty = bgList.currentStyle || window.getComputedStyle(bgList, null)
+    // 获取可视窗口的实际高度 宽度
+    let h = document.documentElement.clientHeight
+    masked.style.display = 'block'
+    let timer = setInterval(show, 10)
+    const k = 1.5
+    function show () {
+      bgList.style.bottom = parseInt(bgSty.bottom) + k + 'px'
+      if (parseInt(bgSty.bottom) === 0) {
+        clearInterval(timer)
+      }
+    }
+  }
+  // hide all background image list
+  $('.masked').tap(hideBgList)
+  function hideBgList () {
+    let maskedH = document.querySelector('.masked')
+    let bgListH = document.querySelector('.bgList')
+    // 获取 bgList 的样式表
+    let bgStyH = bgListH.currentStyle || window.getComputedStyle(bgListH, null)
+    // 获取可视窗口的实际高度 宽度
+    let h = document.documentElement.clientHeight
+    maskedH.style.display = 'none'
+    let timer = setInterval(hide, 10)
+    const n = -3
+    function hide () {
+      bgListH.style.bottom = parseInt(bgStyH.bottom) + n + 'px'
+      if (parseInt(bgStyH.bottom) <= -0.2 * h) {
+        clearInterval(timer)
+      }
+    }
+  }</script></html>

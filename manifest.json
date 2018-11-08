@@ -1,7 +1,7 @@
 {
     "@platforms" : [ "android", "iPhone", "iPad" ],
     "id" : "H58F18C99", /*应用的标识，创建应用时自动生成，勿手动修改*/
-    "name" : "MOZIK", /*应用名称，程序桌面图标名称*/
+    "name" : "Monster", /*应用名称，程序桌面图标名称*/
     "version" : {
         "name" : "2.3.3", /*应用版本名称*/
         "code" : ""
@@ -181,12 +181,12 @@
                     }
                 },
                 "android" : {
-                    "mdpi" : "unpackage/res/icons/48x48.png", /*普通屏程序图标，分辨率：48x48*/
-                    "ldpi" : "unpackage/res/icons/48x48.png", /*大屏程序图标，分辨率：48x48*/
-                    "hdpi" : "unpackage/res/icons/72x72.png", /*高分屏程序图标，分辨率：72x72*/
-                    "xhdpi" : "unpackage/res/icons/96x96.png", /*720P高分屏程序图标，分辨率：96x96*/
-                    "xxhdpi" : "unpackage/res/icons/144x144.png",
-                    "xxxhdpi" : "unpackage/res/icons/192x192.png" /*1080P 高分屏程序图标，分辨率：144x144*/
+                    "mdpi" : "unpackage/res/icons/logo.png", /*普通屏程序图标，分辨率：48x48*/
+                    "ldpi" : "unpackage/res/icons/logo.png", /*大屏程序图标，分辨率：48x48*/
+                    "hdpi" : "unpackage/res/icons/logo.png", /*高分屏程序图标，分辨率：72x72*/
+                    "xhdpi" : "unpackage/res/icons/logo.png", /*720P高分屏程序图标，分辨率：96x96*/
+                    "xxhdpi" : "unpackage/res/icons/logo.png",
+                    "xxxhdpi" : "unpackage/res/icons/logo.png" /*1080P 高分屏程序图标，分辨率：144x144*/
                 }
             },
             "splashscreen" : {
