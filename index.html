@@ -10,7 +10,7 @@
       }
       ul, ol, li {
         list-style: none
-      }</style><link href=./static/css/app.826e092ec806fe8d6785942cd76eda90.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.3ad1d5771e9b13dbdad2.js></script><script type=text/javascript src=./static/js/vendor.d2cd878d3808e73f8ce2.js></script><script type=text/javascript src=./static/js/app.a46231aec00717679c75.js></script></body><script>mui.init({
+      }</style><link href=./static/css/app.826e092ec806fe8d6785942cd76eda90.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.3ad1d5771e9b13dbdad2.js></script><script type=text/javascript src=./static/js/vendor.d2cd878d3808e73f8ce2.js></script><script type=text/javascript src=./static/js/app.251c60552610808f37ca.js></script></body><script>mui.init({
     keyEventBind: {
       backbutton: true // 打开back按键监听
     }
@@ -29,7 +29,7 @@
     // 获取可视窗口的实际高度 宽度
     let h = document.documentElement.clientHeight
     masked.style.display = 'block'
-    let timer = setInterval(show, 10)
+    let timer = setInterval(show, 8)
     const k = 1.5
     function show () {
       bgList.style.bottom = parseInt(bgSty.bottom) + k + 'px'
@@ -48,7 +48,7 @@
     // 获取可视窗口的实际高度 宽度
     let h = document.documentElement.clientHeight
     maskedH.style.display = 'none'
-    let timer = setInterval(hide, 10)
+    let timer = setInterval(hide, 8)
     const n = -3
     function hide () {
       bgListH.style.bottom = parseInt(bgStyH.bottom) + n + 'px'
